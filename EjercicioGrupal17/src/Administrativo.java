@@ -1,3 +1,21 @@
+/*
+Gracias por proporcionar la implementación de la clase Administrativo. Ahora podemos evaluar cómo se aplican los principios SOLID en esta clase:
+
+    Principio de Responsabilidad Única (SRP):
+    La clase Administrativo parece tener una única responsabilidad: representar y gestionar los datos de un usuario administrativo. No se observan violaciones claras del principio SRP en esta implementación.
+
+    Principio de Abierto/Cerrado (OCP):
+    En la implementación actual, la clase Administrativo no muestra una extensión clara sin modificaciones. Sin embargo, dado que es una subclase de Usuario, es posible que se pueda extender mediante la adición de métodos o propiedades adicionales específicas de los usuarios administrativos sin modificar directamente la clase Administrativo.
+
+    Principio de Sustitución de Liskov (LSP):
+    La clase Administrativo hereda de la clase Usuario, lo que indica una relación de herencia. A simple vista, parece que la clase Administrativo puede ser sustituida por su clase base (Usuario) sin afectar la corrección del programa. Sin embargo, para evaluar completamente si se cumple el principio LSP, necesitaría revisar la implementación de la clase Usuario y verificar si todas las precondiciones y postcondiciones se mantienen en la subclase.
+
+    Principio de Segregación de Interfaces (ISP):
+    La clase Administrativo implementa la interfaz Usuario, que sugiere que proporciona una funcionalidad coherente y específica para los usuarios. Aunque no se muestra explícitamente en la implementación proporcionada, si la interfaz Usuario define métodos adecuados para el análisis de usuarios, entonces la clase Administrativo parece cumplir con el principio ISP.
+
+    Principio de Inversión de Dependencia (DIP):
+La clase Administrativo no muestra directamente dependencias con otras clases en su implementación proporcionada. Sin embargo, dado que hereda de la clase abstracta Usuario, está siguiendo una forma de inversión de dependencia, dependiendo de abstracciones en lugar de depender directamente de implementaciones concretas.
+ */
 public class Administrativo extends Usuario{
 
     private String area;
