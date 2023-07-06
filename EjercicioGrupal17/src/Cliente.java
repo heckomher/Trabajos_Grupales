@@ -47,3 +47,8 @@ public class Cliente extends Usuario{
     }
 
 }
+
+
+/**
+ * Principio de responsabilidad única: Las clases Cliente, Administrativo y Profesional se centran en los datos específicos de cada tipo de usuario y de los meétodos constructores y de mostrar sus datos
+ */

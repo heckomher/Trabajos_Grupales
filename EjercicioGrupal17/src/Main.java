@@ -4,7 +4,14 @@ public class Main {
 
         Listado lista = new Listado();
 
-        // 1 cliente , 2 profesionales y dos administrativos
+        // 1 cliente, 2 profesionales y dos administrativos
+
+
+        /**
+         * En los constructores se cumple el principio de sustitución de Liskov ya que en la creación de los objetos de cada clase
+         *  se instancia en la sustitución por la clase hija de menor nivel que al instanciarse no afecta el comportamiento de la clase padre : Ejemplo todos son Usuarios , pero varias clases heredan de esta,
+         * por lo que su instanciacion será su respectiva subclase
+         */
 
         Cliente c1 = new Cliente( "Juanito Perez" , "1990-08-01" , "17985632-7" , "Juan" , "Perez Machuca" , "Los Queules 174" ,"Coronel" ,31 ,"78954455","Modelo" , 1 );
         Administrativo a1 = new Administrativo("María José Eguiguren", "2000-10-14", "21695882-6","Contabilidad","no");

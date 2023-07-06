@@ -19,3 +19,12 @@ public class Usuario implements Asesoria{
         System.out.println("\n" + this.nombre);
     }
 }
+
+/**
+ * Principio de inversión de dependencia: las clases de alto nivql por ejemplo Usuario , no depende de las
+ * subclases o de bajo nivel, que es la clase padre que solo implementa una abstracción de metodos de una interface: Asesoría
+ */
+
+/**
+ * Principio de responsabilidad única: se encarga de representar y gestionar los datos básicos de un usuario
+ */
